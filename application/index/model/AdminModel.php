@@ -13,6 +13,7 @@ class AdminModel extends Model {
      * @return   [type]     [description]
      */
     public static function info() {
-        return self::all();
+        return self::field('admin_name,password,role_id')
+            ->all();
     }
 }

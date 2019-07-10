@@ -8,8 +8,8 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-Route::get('/', 'IndexController/index');
+Route::get('/', 'index/Index/index');
 
 Route::group('index', function () {
-    Route::get('index', 'IndexController/index');
+    Route::get('index', 'index/Index/index');
 });

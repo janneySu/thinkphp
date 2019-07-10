@@ -2,6 +2,8 @@
 namespace app\index\controller;
 
 use app\index\model\AdminModel;
+use app\index\validate\Admin;
+use think\Controller;
 
 class IndexController {
 
@@ -13,13 +15,9 @@ class IndexController {
      * @return   [type]     [description]
      */
     public function index() {
+        $admin      = new Admin();
         $adminModel = new AdminModel();
         $adminInfo  = $adminModel->info();
-        echo '<pre>';
-        print_r($adminInfo);die;
-    }
-
-    public function hello($name = 'ThinkPHP5') {
-        return 'hello,' . $name;
+        print_r($admin->export($adminInfo));die;
     }
 }
