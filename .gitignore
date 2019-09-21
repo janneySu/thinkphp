@@ -5,6 +5,6 @@
 thinkphp
 .env
 .DS_Store
-/runtime
-/public
-/config
+./runtime
+./public
+./config
