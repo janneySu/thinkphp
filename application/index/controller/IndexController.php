@@ -1,11 +1,10 @@
 <?php
 namespace app\index\controller;
 
-use app\index\model\AdminModel;
-use app\index\validate\Admin;
 use think\Controller;
 
-class IndexController {
+class IndexController
+{
 
     /**
      *  用户列表
@@ -14,10 +13,8 @@ class IndexController {
      * @version  [version]
      * @return   [type]     [description]
      */
-    public function index() {
-        $admin      = new Admin();
-        $adminModel = new AdminModel();
-        $adminInfo  = $adminModel->info();
-        print_r($admin->export($adminInfo));die;
+    public function index()
+    {
+        echo "123";die;
     }
 }
