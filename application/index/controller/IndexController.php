@@ -1,7 +1,6 @@
 <?php
 namespace app\index\controller;
 
-use poetry\Poetry;
 use think\Controller;
 
 class IndexController extends Controller
@@ -16,6 +15,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        echo Poetry::index();die;
+        echo '你好';die;
     }
 }
