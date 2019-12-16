@@ -1,9 +1,10 @@
 <?php
 namespace app\index\controller;
 
+use poetry\Poetry;
 use think\Controller;
 
-class IndexController
+class IndexController extends Controller
 {
 
     /**
@@ -15,6 +16,6 @@ class IndexController
      */
     public function index()
     {
-        echo "123";die;
+        echo Poetry::index();die;
     }
 }
