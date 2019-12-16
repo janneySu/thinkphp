@@ -12,4 +12,5 @@ Route::get('/', 'index/Index/index');
 
 Route::group('index', function () {
     Route::get('index', 'index/Index/index');
+    Route::get('xunSearch', 'index/Index/xunSearch');
 });
