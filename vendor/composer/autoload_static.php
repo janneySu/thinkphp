@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit9c3a47081187aa1fc53039db220a8da0
 {
     public static $files = array (
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'ddc3cd2a04224f9638c5d0de6a69c7e3' => __DIR__ . '/..' . '/topthink/think-migration/src/config.php',
     );
 
@@ -16,12 +17,21 @@ class ComposerStaticInit9c3a47081187aa1fc53039db220a8da0
             'think\\migration\\' => 16,
             'think\\composer\\' => 15,
         ),
+        'p' => 
+        array (
+            'phpseclib\\' => 10,
+        ),
+        'h' => 
+        array (
+            'hightman\\xunsearch\\' => 19,
+        ),
         'a' => 
         array (
             'app\\' => 4,
         ),
         'P' => 
         array (
+            'PhpAmqpLib\\' => 11,
             'Phinx\\' => 6,
         ),
     );
@@ -35,9 +45,21 @@ class ComposerStaticInit9c3a47081187aa1fc53039db220a8da0
         array (
             0 => __DIR__ . '/..' . '/topthink/think-installer/src',
         ),
+        'phpseclib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'hightman\\xunsearch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hightman/xunsearch/wrapper/yii2-ext',
+        ),
         'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/application',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
         'Phinx\\' => 
         array (
@@ -55,12 +77,35 @@ class ComposerStaticInit9c3a47081187aa1fc53039db220a8da0
         ),
     );
 
+    public static $classMap = array (
+        'EXunSearch' => __DIR__ . '/..' . '/hightman/xunsearch/wrapper/yii-ext/EXunSearch.php',
+        'XS' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XS.class.php',
+        'XSCommand' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSServer.class.php',
+        'XSComponent' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XS.class.php',
+        'XSDocument' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSDocument.class.php',
+        'XSErrorException' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XS.class.php',
+        'XSException' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XS.class.php',
+        'XSFieldMeta' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSFieldScheme.class.php',
+        'XSFieldScheme' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSFieldScheme.class.php',
+        'XSIndex' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSIndex.class.php',
+        'XSSearch' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSSearch.class.php',
+        'XSServer' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSServer.class.php',
+        'XSTokenizer' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerFull' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerNone' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerScws' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerSplit' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerXlen' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+        'XSTokenizerXstep' => __DIR__ . '/..' . '/hightman/xunsearch/lib/XSTokenizer.class.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit9c3a47081187aa1fc53039db220a8da0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit9c3a47081187aa1fc53039db220a8da0::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit9c3a47081187aa1fc53039db220a8da0::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9c3a47081187aa1fc53039db220a8da0::$classMap;
 
         }, null, ClassLoader::class);
     }

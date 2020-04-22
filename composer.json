@@ -20,7 +20,8 @@
         "topthink/framework": "5.1.*",
         "phpoffice/phpexcel": "^1.8",
         "topthink/think-migration": "2.0.*",
-        "hightman/xunsearch": "^1.4"
+        "hightman/xunsearch": "^1.4",
+        "php-amqplib/php-amqplib": "^2.11"
     },
     "autoload": {
         "psr-4": {

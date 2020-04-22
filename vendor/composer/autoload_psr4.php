@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'think\\migration\\' => array($vendorDir . '/topthink/think-migration/src'),
     'think\\composer\\' => array($vendorDir . '/topthink/think-installer/src'),
+    'phpseclib\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'hightman\\xunsearch\\' => array($vendorDir . '/hightman/xunsearch/wrapper/yii2-ext'),
     'app\\' => array($baseDir . '/application'),
+    'PhpAmqpLib\\' => array($vendorDir . '/php-amqplib/php-amqplib/PhpAmqpLib'),
     'Phinx\\' => array($vendorDir . '/topthink/think-migration/phinx/src/Phinx'),
 );
